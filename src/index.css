@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Luxury Real Estate Design System */
+
+@layer base {
+  :root {
+    /* Navy blue primary - elegant and sophisticated */
+    --primary: 220 40% 13%;
+    --primary-foreground: 40 20% 96%;
+    
+    /* Warm cream/beige background tones */
+    --background: 40 20% 96%;
+    --foreground: 220 40% 13%;
+    
+    /* Card with subtle warmth */
+    --card: 40 30% 97%;
+    --card-foreground: 220 40% 13%;
+    
+    /* Tan/sand accent color */
+    --accent: 35 30% 85%;
+    --accent-foreground: 220 40% 13%;
+    
+    /* Secondary - lighter navy */
+    --secondary: 220 30% 25%;
+    --secondary-foreground: 40 20% 96%;
+    
+    /* Muted tones */
+    --muted: 35 15% 90%;
+    --muted-foreground: 220 15% 45%;
+    
+    /* Gold accent for highlights */
+    --gold: 40 70% 50%;
+    --gold-foreground: 220 40% 13%;
+    
+    /* Warm beige for sections */
+    --warm: 35 35% 90%;
+    --warm-foreground: 220 40% 13%;
+    
+    --popover: 40 30% 97%;
+    --popover-foreground: 220 40% 13%;
+    
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+    
+    --border: 35 20% 85%;
+    --input: 35 20% 85%;
+    --ring: 220 40% 13%;
+    
+    --radius: 0.25rem;
+    
+    --sidebar-background: 40 20% 96%;
+    --sidebar-foreground: 220 40% 13%;
+    --sidebar-primary: 220 40% 13%;
+    --sidebar-primary-foreground: 40 20% 96%;
+    --sidebar-accent: 35 30% 90%;
+    --sidebar-accent-foreground: 220 40% 13%;
+    --sidebar-border: 35 20% 85%;
+    --sidebar-ring: 220 40% 13%;
+  }
+
+  .dark {
+    --primary: 40 20% 96%;
+    --primary-foreground: 220 40% 13%;
+    
+    --background: 220 40% 10%;
+    --foreground: 40 20% 96%;
+    
+    --card: 220 35% 14%;
+    --card-foreground: 40 20% 96%;
+    
+    --accent: 35 25% 25%;
+    --accent-foreground: 40 20% 96%;
+    
+    --secondary: 220 25% 22%;
+    --secondary-foreground: 40 20% 96%;
+    
+    --muted: 220 25% 20%;
+    --muted-foreground: 40 15% 65%;
+    
+    --gold: 40 70% 50%;
+    --gold-foreground: 220 40% 13%;
+    
+    --warm: 220 30% 18%;
+    --warm-foreground: 40 20% 96%;
+    
+    --popover: 220 35% 14%;
+    --popover-foreground: 40 20% 96%;
+    
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+    
+    --border: 220 25% 22%;
+    --input: 220 25% 22%;
+    --ring: 40 20% 96%;
+    
+    --sidebar-background: 220 40% 10%;
+    --sidebar-foreground: 40 20% 96%;
+    --sidebar-primary: 40 20% 96%;
+    --sidebar-primary-foreground: 220 40% 13%;
+    --sidebar-accent: 220 30% 18%;
+    --sidebar-accent-foreground: 40 20% 96%;
+    --sidebar-border: 220 25% 22%;
+    --sidebar-ring: 40 20% 96%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif;
+  }
+}
+
+@layer components {
+  .luxury-heading {
+    @apply font-serif font-light tracking-wide;
+  }
+  
+  .luxury-subheading {
+    @apply font-sans uppercase tracking-[0.2em] text-sm font-medium;
+  }
+  
+  .luxury-body {
+    @apply font-sans font-light leading-relaxed;
+  }
+}
