@@ -26,39 +26,34 @@ import { useState } from "react";
 const propertiesData = [
   {
     id: 1,
-    heroImage: "/assets/property_images/pondicherry/mattur.jpg",
-    images: ["/assets/property_images/pondicherry/mattur.jpg"],
-    title: "Mathur Property, Pondicherry",
+    heroImage: "/assets/property_images/pondicherry/oyo_purple.jpeg",
+    images: ["/assets/property_images/pondicherry/oyo_purple.jpeg"],
+    title: "OYO Purple Lake View, Pondicherry",
     location: "Pondicherry",
     price: "₹1,199/sqft",
     beds: "-",
     baths: "-",
     builtArea: "-",
     plotArea: "1,200",
-    description: `Exclusive plot available in Mathur, Pondicherry. Ideal for investment or building your dream home in a serene location.
+    description: `Beautiful plot with a potential lake view. Excellent investment opportunity in a growing area.
 
-    Enjoy the peace and tranquility of this developing area, perfect for a retirement home or a weekend getaway. The plot is well-connected to the main road and has easy access to essential amenities.`,
-    youtubeId: "", // Placeholder or remove if not needed
+    This plot is situated in a scenic location, ideal for those who love nature. The surrounding area is developing, ensuring good returns on investment in the future.`,
+    youtubeId: "",
     agent: {
       name: "Spacezad Agent",
       title: "Property Consultant",
       image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400",
     },
     aboutLocation: {
-      title: "About Pondicherry",
+      title: "About Lake Area",
       paragraphs: [
-        "Pondicherry is a vibrant city with a rich French heritage, offering a unique blend of culture and tranquility. Known for its promenade, temples, and churches, it is a popular tourist destination.",
-        "The real estate market in Pondicherry is growing steadily, making it a great place for investment. Whether you are looking for a plot, a villa, or an apartment, Pondicherry has something to offer for everyone.",
+        "The lake area offers a cool and pleasant climate. It is a favorite spot for morning walks and bird watching. The neighborhood is peaceful and safe.",
       ],
     },
     faqs: [
       {
-        q: "Is the title clear?",
-        a: "Yes, all our properties have clear titles and are ready for registration.",
-      },
-      {
-        q: "Can I get a loan?",
-        a: "Loan facilities are available from major banks.",
+        q: "Is it a gated community?",
+        a: "It is a private layout with good security.",
       },
     ],
   },
@@ -131,34 +126,39 @@ const propertiesData = [
   },
   {
     id: 4,
-    heroImage: "/assets/property_images/pondicherry/oyo_purple.jpeg",
-    images: ["/assets/property_images/pondicherry/oyo_purple.jpeg"],
-    title: "OYO Purple Lake View",
+    heroImage: "/assets/property_images/pondicherry/mattur.jpg",
+    images: ["/assets/property_images/pondicherry/mattur.jpg"],
+    title: "Mathur Property, Pondicherry",
     location: "Pondicherry",
     price: "₹1,199/sqft",
     beds: "-",
     baths: "-",
     builtArea: "-",
     plotArea: "1,200",
-    description: `Beautiful plot with a potential lake view. Excellent investment opportunity in a growing area.
+    description: `Exclusive plot available in Mathur, Pondicherry. Ideal for investment or building your dream home in a serene location.
 
-    This plot is situated in a scenic location, ideal for those who love nature. The surrounding area is developing, ensuring good returns on investment in the future.`,
-    youtubeId: "",
+    Enjoy the peace and tranquility of this developing area, perfect for a retirement home or a weekend getaway. The plot is well-connected to the main road and has easy access to essential amenities.`,
+    youtubeId: "", // Placeholder or remove if not needed
     agent: {
       name: "Spacezad Agent",
       title: "Property Consultant",
       image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400",
     },
     aboutLocation: {
-      title: "About Lake Area",
+      title: "About Pondicherry",
       paragraphs: [
-        "The lake area offers a cool and pleasant climate. It is a favorite spot for morning walks and bird watching. The neighborhood is peaceful and safe.",
+        "Pondicherry is a vibrant city with a rich French heritage, offering a unique blend of culture and tranquility. Known for its promenade, temples, and churches, it is a popular tourist destination.",
+        "The real estate market in Pondicherry is growing steadily, making it a great place for investment. Whether you are looking for a plot, a villa, or an apartment, Pondicherry has something to offer for everyone.",
       ],
     },
     faqs: [
       {
-        q: "Is it a gated community?",
-        a: "It is a private layout with good security.",
+        q: "Is the title clear?",
+        a: "Yes, all our properties have clear titles and are ready for registration.",
+      },
+      {
+        q: "Can I get a loan?",
+        a: "Loan facilities are available from major banks.",
       },
     ],
   },

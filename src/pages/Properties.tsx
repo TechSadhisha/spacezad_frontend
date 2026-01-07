@@ -1,25 +1,25 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import WorkWithSpacezad from "@/components/WorkWithSpacezad";
 
 const Properties = () => {
+  const { search } = useLocation();
+  const cityFilter = new URLSearchParams(search).get("city");
+
   const properties = [
     {
       id: 1,
-      image: "/assets/property_images/pondicherry/mattur.jpg",
-
+      image: "/assets/property_images/pondicherry/oyo_purple.jpeg",
       badgeColor: "bg-accent/90",
       price: "₹1,199/sqft",
-      title: "Mathur Property, Pondicherry",
+      title: "OYO Purple Lake View, Pondicherry",
       address: "Pondicherry",
       sqft: "1,200",
     },
     {
       id: 2,
-
       image: "/assets/property_images/pondicherry/beach_land.jpg",
-
       badgeColor: "bg-accent/90",
       price: "₹375/sqft",
       title: "Beach Land, Pondicherry",
@@ -29,7 +29,6 @@ const Properties = () => {
     {
       id: 3,
       image: "/assets/property_images/pondicherry/ariyankuppam.jpg",
-
       badgeColor: "bg-accent/90",
       price: "3,750/sqft",
       title: "Ariyankuppam Plot Land, Pondicherry",
@@ -38,15 +37,22 @@ const Properties = () => {
     },
     {
       id: 4,
-      image: "/assets/property_images/pondicherry/oyo_purple.jpeg",
-
+      image: "/assets/property_images/pondicherry/mattur.jpg",
       badgeColor: "bg-accent/90",
       price: "₹1,199/sqft",
-      title: "OYO Purple Lake View, Pondicherry",
+      title: "Mathur Property, Pondicherry",
       address: "Pondicherry",
       sqft: "1,200",
     },
   ];
+
+  const filteredProperties = cityFilter
+    ? properties.filter(
+        (p) =>
+          p.address?.toLowerCase() === cityFilter.toLowerCase() ||
+          p.title.toLowerCase().includes(cityFilter.toLowerCase())
+      )
+    : properties;
 
   return (
     <div className="min-h-screen bg-background">
@@ -64,8 +70,8 @@ const Properties = () => {
         <div className="absolute inset-0 bg-primary/40" />
         <div className="relative z-10 text-center text-primary-foreground px-6 max-w-4xl">
           <p className="text-lg md:text-xl font-sans font-light tracking-wide opacity-90">
-            Spacezad Wilcoxon features property, houses, land & homes for sale
-            in Mumbai, Delhi, Goa & beyond.
+            Spacezad features property, houses, land & homes for sale in Mumbai,
+            Delhi, Goa & beyond.
           </p>
         </div>
       </section>
@@ -73,40 +79,53 @@ const Properties = () => {
       {/* Properties Grid */}
       <section className="py-20 px-6 lg:px-12 bg-background">
         <div className="container mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {properties.map((property) => (
-              <Link
-                to={`/property/${property.id}`}
-                key={property.id}
-                className="group cursor-pointer block"
-              >
-                {/* Image Container */}
-                <div className="relative aspect-[4/3] overflow-hidden mb-4">
-                  <img
-                    src={property.image}
-                    alt={property.title}
-                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                  />
-                
-                </div>
-
-                {/* Property Details */}
-                <div className="space-y-2">
-                  <h3 className="font-serif text-xl md:text-2xl text-foreground tracking-wide">
-                    {property.price}
-                  </h3>
-                  <p className="font-sans text-sm tracking-[0.15em] text-muted-foreground uppercase">
-                    {property.title}
-                  </p>
-                  {property.address && (
-                    <p className="font-sans text-sm tracking-[0.15em] text-muted-foreground uppercase">
-                      {property.address}
-                    </p>
-                  )}
-                </div>
+          {cityFilter && (
+            <h2 className="text-3xl font-serif text-foreground mb-8 text-center">
+              Properties in {cityFilter}
+            </h2>
+          )}
+          {filteredProperties.length === 0 ? (
+            <div className="text-center text-muted-foreground py-10">
+              <p>No properties found in {cityFilter}.</p>
+              <Link to="/properties" className="underline mt-4 block">
+                View all properties
               </Link>
-            ))}
-          </div>
+            </div>
+          ) : (
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              {filteredProperties.map((property) => (
+                <Link
+                  to={`/property/${property.id}`}
+                  key={property.id}
+                  className="group cursor-pointer block"
+                >
+                  {/* Image Container */}
+                  <div className="relative aspect-[4/3] overflow-hidden mb-4">
+                    <img
+                      src={property.image}
+                      alt={property.title}
+                      className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                    />
+                  </div>
+
+                  {/* Property Details */}
+                  <div className="space-y-2">
+                    <h3 className="font-serif text-xl md:text-2xl text-foreground tracking-wide">
+                      {property.price}
+                    </h3>
+                    <p className="font-sans text-sm tracking-[0.15em] text-muted-foreground uppercase">
+                      {property.title}
+                    </p>
+                    {property.address && (
+                      <p className="font-sans text-sm tracking-[0.15em] text-muted-foreground uppercase">
+                        {property.address}
+                      </p>
+                    )}
+                  </div>
+                </Link>
+              ))}
+            </div>
+          )}
         </div>
       </section>
 

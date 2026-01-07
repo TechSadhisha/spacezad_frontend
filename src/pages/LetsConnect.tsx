@@ -188,22 +188,22 @@ const LetsConnect = () => {
 
             <div className="space-y-2 mb-8">
               <a
-                href="mailto:spacezad@sothebysrealty.com"
+                href="mailto:info@spacezad@gmail.com"
                 className="block underline hover:opacity-80 transition-opacity"
               >
-                spacezad@sothebysrealty.com
+                info@spacezad@gmail.com
               </a>
               <a
-                href="tel:512.423.5035"
+                href="tel:95852 30000"
                 className="block underline hover:opacity-80 transition-opacity"
               >
-                512.423.5035
+                95852 30000
               </a>
             </div>
 
             <div className="mb-8">
-              <p>524 N Lamar Blvd #204</p>
-              <p>India TX 78703</p>
+              <p>Anant Enclave, M G Road, Ville Parle</p>
+              <p>Mumbai - India</p>
             </div>
 
             <div className="flex items-center space-x-6">

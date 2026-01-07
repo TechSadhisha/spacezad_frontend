@@ -1,4 +1,5 @@
 import { useRef } from "react";
+import { Link } from "react-router-dom";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
@@ -113,7 +114,8 @@ const CurrentInventory = () => {
           className="flex gap-6 overflow-x-auto snap-x snap-mandatory pb-4"
         >
           {properties.map((property, index) => (
-            <div
+            <Link
+              to={`/properties?city=${property.location}`}
               key={index}
               className="relative flex-shrink-0 w-[85vw] md:w-[600px] lg:w-[700px] snap-center group cursor-pointer"
             >
@@ -134,7 +136,7 @@ const CurrentInventory = () => {
                   </h3>
                 </div>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
       </div>

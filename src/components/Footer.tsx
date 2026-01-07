@@ -43,10 +43,10 @@ const Footer = () => {
             </h4>
             <p className="text-muted-foreground font-sans mb-1">
               <a
-                href="tel:512.423.5035"
+                href="tel:95852 30000"
                 className="hover:text-foreground transition-colors underline"
               >
-                512.423.5035
+                95852 30000
               </a>
             </p>
             <p className="text-muted-foreground font-sans">
