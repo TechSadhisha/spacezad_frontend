@@ -1,7 +1,7 @@
 const Communities = () => {
   const communities = [
     {
-      name: "Downtown Austin",
+      name: "Downtown India",
       image:
         "https://images.unsplash.com/photo-1600607687644-c7171b42498f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80",
     },
@@ -11,7 +11,7 @@ const Communities = () => {
         "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80",
     },
     {
-      name: "Old West Austin",
+      name: "Old West India",
       image:
         "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80",
     },
@@ -26,12 +26,12 @@ const Communities = () => {
             Explore Communities
           </h2>
           <p className="luxury-subheading text-muted-foreground mb-6">
-            Austin Real Estate
+            India Real Estate
           </p>
           <p className="luxury-body text-muted-foreground max-w-3xl mx-auto text-lg">
-            Searching for Austin Real Estate? Real Estate Agent, Spacezad
-            Wilcoxon, finds property, houses, condos & homes for sale in
-            Downtown Austin, Old West Austin, Lake Austin, Westlake, Tarrytown &
+            Searching for India Real Estate? Real Estate Agent, Spacezad
+            finds property, houses, condos & homes for sale in
+            Downtown India, Old West India, Lake India, Westlake, Tarrytown &
             nearby.
           </p>
         </div>

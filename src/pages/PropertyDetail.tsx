@@ -23,137 +23,176 @@ import {
 } from "@/components/ui/accordion";
 import { useState } from "react";
 
-const properties = [
+const propertiesData = [
   {
     id: 1,
-    heroImage:
-      "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1920",
-    images: [
-      "https://images.unsplash.com/photo-1600210492493-0946911123ea?w=800",
-      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800",
-      "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800",
-      "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=800",
-      "https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=800",
-      "https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?w=800",
-    ],
-    title: "VILLA SERENA ON LAKE AUSTIN | A WATERFRONT SANCTUARY",
-    location: "Lake Austin",
-    price: "$8.5M",
-    beds: 8,
-    baths: 10,
-    builtArea: "7,803",
-    plotArea: "12,500",
-    description: `Poised above the tranquil waters of Lake Austin, this villa is a masterpiece of modern design. This absolute waterfront sanctuary blends architectural artistry with a serene coastal lifestyle where sunrise over the lake becomes a daily spectacle and the sound of nature drifts through open pavilions.
+    heroImage: "/assets/property_images/pondicherry/mattur.jpg",
+    images: ["/assets/property_images/pondicherry/mattur.jpg"],
+    title: "Mathur Property, Pondicherry",
+    location: "Pondicherry",
+    price: "₹1,199/sqft",
+    beds: "-",
+    baths: "-",
+    builtArea: "-",
+    plotArea: "1,200",
+    description: `Exclusive plot available in Mathur, Pondicherry. Ideal for investment or building your dream home in a serene location.
 
-The villa's soaring vaulted living pavilion opens onto a grand terrace overlooking a 30-metre infinity pool with a swim-up bar, alfresco dining sala, and expansive lawns that step directly onto the waterfront. Crafted with timeless materials and contemporary elegance, interiors feature hand-carved sculptures, artworks, and curated furnishings that exude calm sophistication.
-
-Each of the eight ensuite bedrooms — including a private master suite — offers panoramic lake views through floor-to-ceiling glass, while the versatile media room can serve as a ninth bedroom or children's den. Thoughtful touches include smart entertainment systems, a fully equipped chef's kitchen, and seamless indoor-outdoor flow designed for entertaining or quiet retreat.`,
-    youtubeId: "dQw4w9WgXcQ",
+    Enjoy the peace and tranquility of this developing area, perfect for a retirement home or a weekend getaway. The plot is well-connected to the main road and has easy access to essential amenities.`,
+    youtubeId: "", // Placeholder or remove if not needed
     agent: {
-      name: "Spacezad Wilcoxon",
-      title: "LUXURY REAL ESTATE SPECIALIST",
+      name: "Spacezad Agent",
+      title: "Property Consultant",
       image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400",
     },
     aboutLocation: {
-      title: "About Lake Austin",
+      title: "About Pondicherry",
       paragraphs: [
-        "Lake Austin is one of Austin's most private and exclusive residential areas. Located on the Colorado River, it's known for its luxury estates, water views, and peaceful setting. Unlike the busy downtown area, Lake Austin offers a calm, secluded lifestyle — perfect for those who want privacy but still want to be close to top schools, hospitals, and the airport.",
-        "The area is surrounded by the calm waters of Lake Austin. It's a great spot for kayaking, boating, or just enjoying the views. While there's no large commercial scene here, some properties offer private docks, boat moorings, and large outdoor spaces made for entertaining. This makes it popular with high-end buyers who value peace, space, and comfort over crowds and nightlife.",
-        "Most homes in Lake Austin are large, custom estates with open layouts, water-facing terraces, and high-end finishes. Many include infinity pools, gyms, wine cellars, and staff quarters. They sit on oversized plots, offering rare privacy. Architecture blends modern design with Texas elements — clean lines, high ceilings, and natural materials like stone and wood.",
-        "The community is quiet and upscale. Residents are mostly executives, business owners, or seasonal homeowners who value discretion and space. Security is strong, with gated communities and private roads. Concierge and property management services are available for those abroad.",
+        "Pondicherry is a vibrant city with a rich French heritage, offering a unique blend of culture and tranquility. Known for its promenade, temples, and churches, it is a popular tourist destination.",
+        "The real estate market in Pondicherry is growing steadily, making it a great place for investment. Whether you are looking for a plot, a villa, or an apartment, Pondicherry has something to offer for everyone.",
       ],
     },
     faqs: [
       {
-        q: "Where is the best place to buy properties in Lake Austin?",
-        a: "The most sought-after areas are along the waterfront, particularly in gated communities that offer privacy and direct water access.",
+        q: "Is the title clear?",
+        a: "Yes, all our properties have clear titles and are ready for registration.",
       },
       {
-        q: "Is it worth buying a property in Lake Austin?",
-        a: "Yes, Lake Austin properties tend to appreciate well due to limited inventory and high demand for waterfront living.",
-      },
-      {
-        q: "Where do most executives live in Lake Austin?",
-        a: "Most executives prefer the gated estates along the western shore, known for larger lots and enhanced privacy.",
-      },
-      {
-        q: "Can foreigners buy properties in Lake Austin?",
-        a: "Yes, there are no restrictions on foreign ownership of residential property in Texas.",
-      },
-      {
-        q: "Where do the wealthy live in Lake Austin?",
-        a: "Ultra-high-net-worth individuals typically reside in the exclusive waterfront compounds with private docks.",
-      },
-      {
-        q: "What is the property tax in Lake Austin?",
-        a: "Property taxes in Austin typically range from 1.8% to 2.2% of the assessed value annually.",
-      },
-      {
-        q: "How much does it cost to live comfortably in Lake Austin?",
-        a: "Comfortable living in Lake Austin typically requires an annual budget of $200,000+ excluding mortgage payments.",
-      },
-      {
-        q: "What is the average cost to buy a property in Lake Austin?",
-        a: "Waterfront properties in Lake Austin typically range from $3M to $25M depending on size and location.",
+        q: "Can I get a loan?",
+        a: "Loan facilities are available from major banks.",
       },
     ],
-    similarProperties: [
+  },
+  {
+    id: 2,
+    heroImage: "/assets/property_images/pondicherry/beach_land.jpg",
+    images: ["/assets/property_images/pondicherry/beach_land.jpg"],
+    title: "Beach Land, Pondicherry",
+    location: "Pondicherry",
+    price: "₹375/sqft",
+    beds: "-",
+    baths: "-",
+    builtArea: "-",
+    plotArea: "19,500",
+    description: `Expansive beach land perfect for a resort or large private estate. Enjoy the coastal breeze and potential for high appreciation.
+
+    This property offers direct access to the beach and is located in a prime area known for its tourism potential. It is an excellent opportunity for developers and investors.`,
+    youtubeId: "",
+    agent: {
+      name: "Spacezad Agent",
+      title: "Property Consultant",
+      image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400",
+    },
+    aboutLocation: {
+      title: "About Pondicherry Coast",
+      paragraphs: [
+        "The coastline of Pondicherry is famous for its pristine beaches and scenic beauty. It attracts tourists from all over the world, making it a hotspot for hospitality and residential projects.",
+        "Living near the beach offers a relaxed lifestyle with fresh air and stunning views. The area is also seeing infrastructure development, further boosting property values.",
+      ],
+    },
+    faqs: [
       {
-        id: 2,
-        image:
-          "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800",
-        location: "Lake Austin, Texas",
-        title: "Exclusive Waterfront Villa in the Lake Austin area",
-        price: "$19M",
-        beds: 6,
-        baths: 6,
-        builtArea: "2,500",
-        plotArea: "3,994",
+        q: "Is it close to the city?",
+        a: "It is a short drive from the main city center.",
       },
+    ],
+  },
+  {
+    id: 3,
+    heroImage: "/assets/property_images/pondicherry/ariyankuppam.jpg",
+    images: ["/assets/property_images/pondicherry/ariyankuppam.jpg"],
+    title: "Ariyankuppam Plot Land",
+    location: "Pondicherry",
+    price: "₹3,750/sqft",
+    beds: "-",
+    baths: "-",
+    builtArea: "-",
+    plotArea: "1,800",
+    description: `Prime residential plot in Ariyankuppam. Close to city amenities while maintaining a peaceful environment.
+
+    Ariyankuppam is a rapidly developing suburb of Pondicherry, offering a good balance of urban convenience and suburban quiet. The plot is suitable for constructing a spacious independent house.`,
+    youtubeId: "",
+    agent: {
+      name: "Spacezad Agent",
+      title: "Property Consultant",
+      image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400",
+    },
+    aboutLocation: {
+      title: "About Ariyankuppam",
+      paragraphs: [
+        "Ariyankuppam is located just south of Pondicherry city. It is known for its bridge, church, and archaeological site. It is a well-established residential area with schools, hospitals, and markets nearby.",
+      ],
+    },
+    faqs: [
       {
-        id: 3,
-        image:
-          "https://images.unsplash.com/photo-1613490493576-7fde63acd811?w=800",
-        location: "Lake Austin, Texas",
-        title: "10 Bedrooms Luxury Stunning Lake View Villa",
-        price: "$18M",
-        beds: 10,
-        baths: 12,
-        builtArea: "3,845",
-        plotArea: "10,954",
+        q: "Is water available?",
+        a: "Yes, there is good ground water availability.",
       },
+    ],
+  },
+  {
+    id: 4,
+    heroImage: "/assets/property_images/pondicherry/oyo_purple.jpeg",
+    images: ["/assets/property_images/pondicherry/oyo_purple.jpeg"],
+    title: "OYO Purple Lake View",
+    location: "Pondicherry",
+    price: "₹1,199/sqft",
+    beds: "-",
+    baths: "-",
+    builtArea: "-",
+    plotArea: "1,200",
+    description: `Beautiful plot with a potential lake view. Excellent investment opportunity in a growing area.
+
+    This plot is situated in a scenic location, ideal for those who love nature. The surrounding area is developing, ensuring good returns on investment in the future.`,
+    youtubeId: "",
+    agent: {
+      name: "Spacezad Agent",
+      title: "Property Consultant",
+      image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400",
+    },
+    aboutLocation: {
+      title: "About Lake Area",
+      paragraphs: [
+        "The lake area offers a cool and pleasant climate. It is a favorite spot for morning walks and bird watching. The neighborhood is peaceful and safe.",
+      ],
+    },
+    faqs: [
       {
-        id: 4,
-        image:
-          "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800",
-        location: "Lake Austin, Texas",
-        title: "A Luxury Waterfront Villa Nestled in Lake Austin",
-        price: "$18M",
-        beds: 6,
-        baths: 6,
-        builtArea: "3,280",
-        plotArea: "6,990",
+        q: "Is it a gated community?",
+        a: "It is a private layout with good security.",
       },
     ],
   },
 ];
 
-// Generate data for all property IDs
-const generatePropertyData = (id: number) => {
-  const baseProperty = properties[0];
-  return {
-    ...baseProperty,
-    id,
-    title: `LUXURY ESTATE ${id} | EXCLUSIVE WATERFRONT PROPERTY`,
-  };
-};
-
 const PropertyDetail = () => {
   const { id } = useParams();
   const propertyId = parseInt(id || "1");
-  const property =
-    properties.find((p) => p.id === propertyId) ||
-    generatePropertyData(propertyId);
+  const foundProperty = propertiesData.find((p) => p.id === propertyId);
+
+  if (!foundProperty) {
+    return (
+      <div className="min-h-screen flex items-center justify-center">
+        Property not found
+      </div>
+    );
+  }
+
+  const similarProperties = propertiesData
+    .filter((p) => p.id !== propertyId)
+    .slice(0, 3)
+    .map((p) => ({
+      id: p.id,
+      image: p.heroImage,
+      location: p.location,
+      title: p.title,
+      price: p.price,
+      beds: p.beds,
+      baths: p.baths,
+      builtArea: p.builtArea,
+      plotArea: p.plotArea,
+    }));
+
+  const property = { ...foundProperty, similarProperties };
 
   const [selectedImage, setSelectedImage] = useState(0);
 

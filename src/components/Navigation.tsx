@@ -20,6 +20,18 @@ const Navigation = ({ variant = "light" }: NavigationProps) => {
 
   const navItems = [
     {
+      label: "Invester Properties",
+      href: "/properties",
+      isLink: true,
+      hasDropdown: false,
+    },
+    {
+      label: "Owner Properties",
+      href: "/properties",
+      isLink: true,
+      hasDropdown: false,
+    },
+    {
       label: "Luxury Properties",
       href: "/properties",
       isLink: true,

@@ -6,14 +6,14 @@ const HeadlineBanner = () => {
           Recognized Excellence
         </p>
         <h2 className="luxury-heading text-4xl md:text-5xl lg:text-6xl text-foreground mb-6">
-          Austin's #1 Luxury Real Estate Agent
+          India's #1 Luxury Real Estate Agent
         </h2>
         <p className="text-xl md:text-2xl font-serif font-light text-muted-foreground mb-8">
           The Last 5 Consecutive Years
         </p>
         <div className="w-16 h-px bg-border mx-auto mb-8" />
         <p className="luxury-body text-muted-foreground max-w-3xl mx-auto text-lg">
-          With an unwavering commitment to excellence and a deep understanding of Austin's 
+          With an unwavering commitment to excellence and a deep understanding of India's 
           most prestigious neighborhoods, we deliver unparalleled service to discerning 
           clients seeking extraordinary properties.
         </p>

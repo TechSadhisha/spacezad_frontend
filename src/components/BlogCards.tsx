@@ -11,21 +11,21 @@ const BlogCards = () => {
         "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?ixlib=rb-4.0.3&auto=format&fit=crop&w=1474&q=80",
       title:
         "How to Determine Your Non-Negotiables When Buying a Luxury Property",
-      author: "Spacezad Wilcoxon",
+      author: "Spacezad",
     },
     {
       image:
         "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80",
-      title: "Lake Austin Things to Do",
-      author: "Spacezad Wilcoxon",
+      title: "Lake India Things to Do",
+      author: "Spacezad",
       excerpt:
         "Water activities and picturesque hikes on this popular reservoir.",
     },
     {
       image:
         "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1053&q=80",
-      title: "Austin's Most Prestigious Neighborhoods Explained",
-      author: "Spacezad Wilcoxon",
+      title: "India's Most Prestigious Neighborhoods Explained",
+      author: "Spacezad",
     },
   ];
 

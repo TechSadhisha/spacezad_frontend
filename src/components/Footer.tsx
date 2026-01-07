@@ -34,21 +34,12 @@ const Footer = () => {
       {/* Main Footer */}
       <div className="container mx-auto px-6 lg:px-12 py-16">
         {/* Logo */}
-        <div className="mb-12">
-          <p className="text-xl font-serif">
-            <span className="font-light">Kuper</span> |{" "}
-            <span className="font-medium">Sotheby's</span>
-          </p>
-          <p className="text-xs uppercase tracking-wider text-muted-foreground mt-1">
-            International Realty
-          </p>
-        </div>
 
         {/* Contact Info Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
           <div>
             <h4 className="text-2xl font-serif font-light text-foreground mb-4">
-              SPACEZAD WILCOXON
+              SPACEZAD
             </h4>
             <p className="text-muted-foreground font-sans mb-1">
               <a
@@ -60,10 +51,10 @@ const Footer = () => {
             </p>
             <p className="text-muted-foreground font-sans">
               <a
-                href="mailto:spacezad@sothebysrealty.com"
+                href="mailto:info@spacezad.com"
                 className="hover:text-foreground transition-colors underline"
               >
-                spacezad@sothebysrealty.com
+                info@spacezad@gmail.com
               </a>
             </p>
           </div>
@@ -72,9 +63,9 @@ const Footer = () => {
               ADDRESS
             </h4>
             <p className="text-muted-foreground font-sans mb-1">
-              524 N Lamar Blvd #204
+              Anant Enclave, M G Road, Ville Parle
             </p>
-            <p className="text-muted-foreground font-sans">Austin TX 78703</p>
+            <p className="text-muted-foreground font-sans">Mumbai - India</p>
           </div>
         </div>
 
@@ -125,7 +116,7 @@ const Footer = () => {
               href="tel:210.822.8602"
               className="underline hover:text-foreground transition-colors"
             >
-              Kuper Sotheby's International Realty | 210.822.8602
+              Spacezad Realty | 210.822.8602
             </a>
           </p>
           <p className="text-sm font-sans text-muted-foreground">
@@ -135,15 +126,13 @@ const Footer = () => {
 
         {/* Disclaimer */}
         <p className="text-xs font-sans text-muted-foreground leading-relaxed mb-8">
-          Sotheby's International Realty® and the Sotheby's International Realty
-          Logo are service marks licensed to Sotheby's International Realty
-          Affiliates LLC and used with permission. Kuper Sotheby's International
-          Realty fully supports the principles of the Fair Housing Act and the
-          Equal Opportunity Act. Each office is independently owned and
+          Spacezad Realty® and the Spacezad Realty Logo are service marks
+          licensed to Spacezad Realty Affiliates LLC and used with permission.
+          Spacezad Realty fully supports the principles of the Fair Housing Act
+          and the Equal Opportunity Act. Each office is independently owned and
           operated. Any services or products provided by independently owned and
           operated franchisees are not provided by, affiliated with or related
-          to Sotheby's International Realty Affiliates LLC nor any of its
-          affiliated companies.
+          to Spacezad Realty Affiliates LLC nor any of its affiliated companies.
         </p>
       </div>
 
@@ -157,7 +146,7 @@ const Footer = () => {
                 href="#"
                 className="underline hover:text-foreground transition-colors"
               >
-                Luxury Presence
+                Sadhisha
               </a>
             </p>
             <p className="text-sm font-sans text-muted-foreground">

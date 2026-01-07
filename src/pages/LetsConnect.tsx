@@ -203,7 +203,7 @@ const LetsConnect = () => {
 
             <div className="mb-8">
               <p>524 N Lamar Blvd #204</p>
-              <p>Austin TX 78703</p>
+              <p>India TX 78703</p>
             </div>
 
             <div className="flex items-center space-x-6">

@@ -1,17 +1,17 @@
 const Stats = () => {
   const stats = [
     {
-      value: "$2.5B",
+      value: "₹2,000 Cr+",
       label: "Total Sales Volume",
       description: "Career lifetime sales",
     },
     {
       value: "#1",
-      label: "Austin Luxury Agent",
+      label: "India Luxury Agent",
       description: "Five consecutive years",
     },
     {
-      value: "$389M",
+      value: "₹250 Cr+",
       label: "2023 Sales",
       description: "Annual volume",
     },
@@ -30,8 +30,8 @@ const Stats = () => {
               A Track Record of Excellence
             </h2>
             <p className="luxury-body text-warm-foreground/80 text-lg mb-12">
-              Numbers tell a story of trust, expertise, and unwavering commitment 
-              to achieving exceptional outcomes for every client.
+              Numbers tell a story of trust, expertise, and unwavering
+              commitment to achieving exceptional outcomes for every client.
             </p>
 
             {/* Stats Grid */}

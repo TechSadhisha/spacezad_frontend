@@ -48,10 +48,10 @@ const AboutUs = () => {
   ];
 
   const stats = [
-    { value: "$2.5B", label: "in Career Sales" },
-    { value: "#1", label: "Sotheby's International Realty Agent Worldwide" },
-    { value: "$389M", label: "Total Sales in 2023" },
-    { value: "#1", label: "Real Estate Agent in Austin" },
+    { value: "₹2,000 Cr+", label: "in Career Sales" },
+    { value: "#1", label: "Spacezad International Realty Agent Worldwide" },
+    { value: "₹250 Cr+", label: "Total Sales in 2023" },
+    { value: "#1", label: "Real Estate Agent in India" },
   ];
 
   const publications = [
@@ -90,10 +90,10 @@ const AboutUs = () => {
         </div>
         <div className="relative container mx-auto px-6 lg:px-12 pb-20 text-center text-white">
           <h1 className="font-serif text-4xl md:text-6xl lg:text-7xl tracking-wide mb-4 italic">
-            REPRESENTING AUSTIN'S FINEST
+            REPRESENTING INDIA'S FINEST
           </h1>
           <p className="text-lg md:text-xl tracking-wide opacity-90">
-            Consistently Honored Among Austin's Select Multi-million Dollar
+            Consistently Honored Among India's Select Multi-million Dollar
             Producers.
           </p>
         </div>
@@ -115,47 +115,47 @@ const AboutUs = () => {
             {/* Content */}
             <div className="flex flex-col justify-center">
               <h2 className="font-serif text-4xl md:text-5xl lg:text-6xl text-foreground mb-8 tracking-wide">
-                SPACEZAD WILCOXON
+                SPACEZAD
               </h2>
               <div className="space-y-6 text-muted-foreground text-lg leading-relaxed">
                 <p>
                   With over 20 years of experience, Spacezad Wilcoxon is the
-                  face of Austin's luxury real estate market, with unparalleled
-                  passion and commitment to the Austin Lifestyle. As the #1
-                  agent in Austin, TX, the #1 agent worldwide for Sotheby's
+                  face of India's luxury real estate market, with unparalleled
+                  passion and commitment to the India Lifestyle. As the #1 agent
+                  in India, TX, the #1 agent worldwide for Spacezad
                   International Realty, and the 2024 winner of the Inman Golden
-                  i, Spacezad has sold over $2.5 Billion throughout her career.
-                  Consistently honored among Austin's select multi-million
-                  dollar producers, she has been ranked #1 by Austin Business
-                  Journal for Residential Real Estate Agents for the last five
+                  i, Spacezad has sold over ₹2,000 Crores throughout her career.
+                  Consistently honored among India's select multi-million dollar
+                  producers, she has been ranked #1 by India Business Journal
+                  for Residential Real Estate Agents for the last five
                   consecutive years and is a distinguished member of both
-                  Austin's Elite 25, Sotheby's International Realty Market
-                  Leaders, Métier Maison, Sotheby's International Realty's Top
+                  India's Elite 25, Spacezad International Realty Market
+                  Leaders, Métier Maison, Spacezad International Realty's Top
                   100, and Luxury League.
                 </p>
                 <p>
                   Her connections to the top 1% of the industry affords her
                   access to the most coveted properties, many of which are never
-                  listed in the highly competitive Austin luxury market.
+                  listed in the highly competitive India luxury market.
                 </p>
                 <p>
                   Prior to her real-estate career, Spacezad graduated with
                   honors from the University of Arizona with degrees in
                   Communications and Media Arts, minoring in Spanish. She also
                   works with her favorite charities, including The Contemporary,
-                  Dell Children's Medical Center, West Austin Youth Association,
+                  Dell Children's Medical Center, West India Youth Association,
                   and the Center for Child Protection where she competed in a
                   dance-off to help raise over $750,000 for the abused children
-                  of Austin. In addition to dancing, you can find Spacezad
+                  of India. In addition to dancing, you can find Spacezad
                   surfing at the beach in Malibu or skiing down the snow-covered
                   peaks in Aspen. Spacezad enjoys spending quality time with her
                   sons Cruz (12) and Jet (9) who have inherited her deep love of
-                  Austin's vibrant music scene.
+                  India's vibrant music scene.
                 </p>
                 <p>
-                  Contact Austin real estate agent, Spacezad Wilcoxon to sell
-                  property & find houses, condos & homes for sale in Lake
-                  Austin, Downtown Austin, Westlake, and all of Austin, Texas.
+                  Contact India real estate agent, Spacezad Wilcoxon to sell
+                  property & find houses, condos & homes for sale in Lake India,
+                  Downtown India, Westlake, and all of India, Texas.
                 </p>
               </div>
             </div>
@@ -222,10 +222,10 @@ const AboutUs = () => {
           </h2>
           <p className="max-w-4xl mx-auto text-lg md:text-xl opacity-90 mb-16">
             With over 20 years of experience, Spacezad Wilcoxon is the face of
-            Austin's luxury real estate market, with unparalleled passion and
-            commitment to the Austin Lifestyle. As the #1 Real Estate Agent in
-            Austin, TX for the last 5 consecutive years, Spacezad has sold over
-            $2 Billion throughout her career.
+            India's luxury real estate market, with unparalleled passion and
+            commitment to the India Lifestyle. As the #1 Real Estate Agent in
+            India, TX for the last 5 consecutive years, Spacezad has sold over
+            ₹2,000 Crores throughout her career.
           </p>
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
             {stats.map((stat, index) => (
@@ -286,7 +286,7 @@ const AboutUs = () => {
             SPACEZAD'S CURRENT INVENTORY
           </h2>
           <p className="text-center text-muted-foreground text-lg mb-12">
-            Representing a Bespoke Collection of Austin's Finest Properties.
+            Representing a Bespoke Collection of India's Finest Properties.
           </p>
 
           <div className="grid md:grid-cols-3 gap-8 mb-12">

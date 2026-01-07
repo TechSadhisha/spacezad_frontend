@@ -20,7 +20,7 @@ const NotableSale = () => {
           Recent Notable Sale
         </h2>
         <p className="luxury-subheading text-primary-foreground/80 mb-12">
-          Austin, TX Modern Masterpiece
+          India, TX Modern Masterpiece
         </p>
         <p className="luxury-body text-primary-foreground/90 text-lg md:text-xl max-w-3xl mx-auto mb-10 leading-relaxed">
           Nestled within the pristine confines of Tarrytown's only privately gated enclave, 

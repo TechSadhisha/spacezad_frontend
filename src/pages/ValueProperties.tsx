@@ -2,7 +2,17 @@ import { Link } from "react-router-dom";
 import { useState } from "react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
-import { MapPin, Building, Layers, Calendar, IndianRupee, Info, Phone, ChevronDown, ChevronUp } from "lucide-react";
+import {
+  MapPin,
+  Building,
+  Layers,
+  Calendar,
+  IndianRupee,
+  Info,
+  Phone,
+  ChevronDown,
+  ChevronUp,
+} from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const ValueProperties = () => {
@@ -16,75 +26,73 @@ const ValueProperties = () => {
   const properties = [
     {
       id: 1,
-      image: "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800",
-      status: "Under Construction",
-      title: "Brigade Horizon",
-      location: "Mysore Road, Bangalore",
-      type: "Apartments",
-      bhk: "1, 2, 3 & 4 BHK",
-      sqft: "1013 Sq.ft.* Onwards",
-      price: "₹ 45 Lakhs Onwards",
-      possession: "December, 2026",
-      reraId: "PRM/KA/RERA/1251/310/PR/190722/005086",
+      image: "/assets/property_images/pondicherry/mattur.jpg",
+      status: "Private Listing",
+      title: "Mathur Property, Pondicherry",
+      location: "Pondicherry",
+      type: "Plot",
+      bhk: "-",
+      sqft: "1,200 Sq.ft.",
+      price: "₹ 1,199/sqft",
+      possession: "Ready to Register",
+      reraId: "N/A",
     },
     {
       id: 2,
-      image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800",
-      status: "Under Construction",
-      title: "Brigade Oasis Phase 3",
-      location: "Devanahalli, Bangalore",
-      type: "Luxury Plots",
-      bhk: "Plots",
-      sqft: "2550 Sq.ft.* Onwards",
-      price: "₹ 1.09 Cr* Onwards",
-      possession: "June, 2025",
-      reraId: "PRM/KA/RERA/1250/303/PR/220124/006562",
+      image: "/assets/property_images/pondicherry/beach_land.jpg",
+      status: "Taking Reservations",
+      title: "Beach Land, Pondicherry",
+      location: "Pondicherry",
+      type: "Land",
+      bhk: "-",
+      sqft: "19,500 Sq.ft.",
+      price: "₹ 375/sqft",
+      possession: "Ready to Register",
+      reraId: "N/A",
     },
     {
       id: 3,
-      image: "https://images.unsplash.com/photo-1613490493576-7fde63acd811?w=800",
-      status: "Ready to Move",
-      title: "Brigade Meadows",
-      location: "Kanakapura Road, Bangalore",
-      type: "Apartments",
-      bhk: "2 & 3 BHK",
-      sqft: "1200 Sq.ft.* Onwards",
-      price: "₹ 65 Lakhs Onwards",
-      possession: "Ready",
-      reraId: "PRM/KA/RERA/1251/309/PR/180521/003421",
+      image: "/assets/property_images/pondicherry/ariyankuppam.jpg",
+      status: "Pocket Listing",
+      title: "Ariyankuppam Plot Land",
+      location: "Pondicherry",
+      type: "Plot",
+      bhk: "-",
+      sqft: "1,800 Sq.ft.",
+      price: "₹ 3,750/sqft",
+      possession: "Ready to Register",
+      reraId: "N/A",
     },
     {
       id: 4,
-      image: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800",
-      status: "Under Construction",
-      title: "Brigade Cornerstone",
-      location: "Electronic City, Bangalore",
-      type: "Apartments",
-      bhk: "1, 2 & 3 BHK",
-      sqft: "850 Sq.ft.* Onwards",
-      price: "₹ 55 Lakhs Onwards",
-      possession: "March, 2027",
-      reraId: "PRM/KA/RERA/1251/311/PR/210815/004892",
-    },
-    {
-      id: 5,
-      image: "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=800",
-      status: "Pre Launch",
-      title: "Brigade Valencia",
-      location: "Hosur Road, Bangalore",
-      type: "Villas",
-      bhk: "3 & 4 BHK",
-      sqft: "2800 Sq.ft.* Onwards",
-      price: "₹ 2.5 Cr* Onwards",
-      possession: "December, 2028",
-      reraId: "PRM/KA/RERA/1251/312/PR/231001/007123",
+      image: "/assets/property_images/pondicherry/oyo_purple.jpeg",
+      status: "Private Listing",
+      title: "OYO Purple Lake View",
+      location: "Pondicherry",
+      type: "Plot",
+      bhk: "-",
+      sqft: "1,200 Sq.ft.",
+      price: "₹ 1,199/sqft",
+      possession: "Ready to Register",
+      reraId: "N/A",
     },
   ];
 
   const filterOptions = {
-    propertyType: ["Builder Floors", "Commercial", "Leased", "Pre Leased", "Residential"],
+    propertyType: [
+      "Builder Floors",
+      "Commercial",
+      "Leased",
+      "Pre Leased",
+      "Residential",
+    ],
     location: ["Bangalore", "Mysore", "Chennai", "Hyderabad", "Mumbai"],
-    possession: ["Ready to Move", "Within 6 Months", "Within 1 Year", "Within 2 Years"],
+    possession: [
+      "Ready to Move",
+      "Within 6 Months",
+      "Within 1 Year",
+      "Within 2 Years",
+    ],
   };
 
   const toggleFilter = (filter: string) => {
@@ -94,9 +102,9 @@ const ValueProperties = () => {
   return (
     <div className="min-h-screen bg-background">
       <Navigation />
-      
+
       {/* Hero Section */}
-        <section className="relative h-[70vh] flex items-center justify-center">
+      <section className="relative h-[70vh] flex items-center justify-center">
         <div
           className="absolute inset-0 bg-cover bg-center"
           style={{
@@ -113,11 +121,10 @@ const ValueProperties = () => {
           </h1>
           <p className="text-lg md:text-xl font-sans font-light tracking-wide opacity-90">
             Spacezad Wilcoxon features property, houses, land & homes for sale
-            in Lake Austin, Westlake, Tarrytown, TX & beyond.
+            in Lake India, Westlake, Tarrytown, TX & beyond.
           </p>
         </div>
       </section>
-
 
       {/* Filter Bar */}
       <section className="sticky top-0 z-40">
@@ -127,7 +134,9 @@ const ValueProperties = () => {
               key={filter}
               onClick={() => toggleFilter(filter)}
               className={`py-4 px-6 text-white font-medium flex items-center justify-center gap-2 transition-all ${
-                activeFilter === filter ? "bg-gray-600 ring-2 ring-primary ring-inset" : "hover:bg-gray-600"
+                activeFilter === filter
+                  ? "bg-gray-600 ring-2 ring-primary ring-inset"
+                  : "hover:bg-gray-600"
               }`}
             >
               {filter === "propertyType" && "Property Type"}
@@ -141,29 +150,36 @@ const ValueProperties = () => {
             </button>
           ))}
         </div>
-        
+
         {/* Filter Dropdown */}
         {activeFilter && (
           <div className="bg-accent py-6">
             <div className="container mx-auto flex flex-wrap justify-center gap-3">
-              {filterOptions[activeFilter as keyof typeof filterOptions].map((option) => (
-                <button
-                  key={option}
-                  onClick={() => {
-                    setSelectedFilters((prev) => ({
-                      ...prev,
-                      [activeFilter]: prev[activeFilter as keyof typeof prev] === option ? "" : option,
-                    }));
-                  }}
-                  className={`px-6 py-2 rounded-full font-medium transition-all ${
-                    selectedFilters[activeFilter as keyof typeof selectedFilters] === option
-                      ? "bg-primary text-primary-foreground"
-                      : "bg-white text-foreground hover:bg-gray-100"
-                  }`}
-                >
-                  {option}
-                </button>
-              ))}
+              {filterOptions[activeFilter as keyof typeof filterOptions].map(
+                (option) => (
+                  <button
+                    key={option}
+                    onClick={() => {
+                      setSelectedFilters((prev) => ({
+                        ...prev,
+                        [activeFilter]:
+                          prev[activeFilter as keyof typeof prev] === option
+                            ? ""
+                            : option,
+                      }));
+                    }}
+                    className={`px-6 py-2 rounded-full font-medium transition-all ${
+                      selectedFilters[
+                        activeFilter as keyof typeof selectedFilters
+                      ] === option
+                        ? "bg-primary text-primary-foreground"
+                        : "bg-white text-foreground hover:bg-gray-100"
+                    }`}
+                  >
+                    {option}
+                  </button>
+                )
+              )}
             </div>
           </div>
         )}
